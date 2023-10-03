@@ -108,7 +108,7 @@ export const userRows =[
         id: 10,
         username: "William",
         img: "https://www.pngkit.com/png/full/255-2559295_men-robert-negoita.png",
-        status: "Pending",
+        status: "pending",
         email: "1snow@gmail.com",
         age: 27,
     },
