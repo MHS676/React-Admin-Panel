@@ -11,35 +11,42 @@ import PsychologyOutlinedIcon from '@mui/icons-material/PsychologyOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import FolderSharedOutlinedIcon from '@mui/icons-material/FolderSharedOutlined';
 import ExitToAppOutlinedIcon from '@mui/icons-material/ExitToAppOutlined';
+import {Link} from "react-router-dom"
 
 
 const Sidebar = () => {
   return (
     <div className='sidebar'>
       <div className="top">
+      <Link to="/" style={{textDecoration: "none"}}>
         <span className="logo">ADMIN</span>
+      </Link>
     </div>
     <hr />
       <div className="center">
       <ul>
       <p className="title">MAIN</p>
+      
         <li>
         <span className="icon"><DashboardIcon/></span>
               
             <span>Dashboard</span>
         </li>
         <p className="title">LISTS</p>
+        <Link to="/users" style={{textDecoration: "none"}}>
         <li>
         <span className="icon"><PersonOutlineOutlinedIcon/></span>
             
             <span>Users</span>
         </li>
-        
+        </Link>
+         <Link to="/products" style={{textDecoration: "none"}}>
         <li>
         <span className="icon"><Inventory2OutlinedIcon/></span>
             
             <span>Products</span>
         </li>
+        </Link>
         <p className="title">MAIN</p>
         <li>
         <span className="icon"><GradingOutlinedIcon/></span>
